@@ -1,0 +1,85 @@
+.containerLamp, .Logo, section.Main footer{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+header.principal, section.Ative{
+    display: flex;
+}
+
+/*Header principal*/
+
+header.principal{
+    width: 80%;
+    height: 8em;
+
+    justify-content: space-between;
+    background-color: #bdbdbd;
+
+    border-bottom: 2px solid rgb(26, 25, 25);
+    box-shadow: 0px 1.5px 3px rgb(0, 0, 0);
+    user-select: none;
+}
+
+.logo{
+    margin: 0 0.5em 0 0.5em;
+    width: 6.5em;
+    height: 6.5em;
+}
+.Logo .text{
+    width: 30em;
+    height: 5em;
+}
+
+.containerLamp, .containerBack{
+    width: 8em;
+    border-left: 2px solid black;
+    cursor: pointer;
+}
+.containerLamp:hover, .containerBack:hover{
+    border-left: 4px solid black;
+    border-bottom: 0.5px solid black;
+}
+
+header .containerLamp img{
+    width: 5em;
+    height: 5em;
+}
+header .containerBack img{
+    width: 4.5em;
+    height: 4.5em;
+}
+
+/*Aside*/
+
+#AsideImg{
+    width: 20%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    z-index: 5;
+
+    background: url("../images/Bakuman2.png") no-repeat;
+    background-size: cover;
+
+    margin-left: 80%;
+    border-left: 3px solid rgb(5, 5, 5);
+    box-shadow: -0.5px 0px 3px rgb(58, 58, 58);
+}
+
+/*Outros componentes*/
+
+.barrinha{
+    width: 100%;
+    height: 2rem;
+    position: fixed;
+    bottom: 0;
+    z-index: 6;
+    
+    background-color: #bdbdbd;
+    border-top: 3px solid rgb(44, 44, 44);
+}
+
+.limite, section.Main{
+    width: 80%;
+}

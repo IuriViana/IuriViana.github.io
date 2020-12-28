@@ -1,0 +1,39 @@
+.Text{
+    margin-top: 6rem;
+    color: rgb(17, 17, 17);
+    text-align: center;
+    font-size: clamp(1em, 3em, 5vw);
+    font-weight: bolder;
+    width: 80%;
+    font-family: 'Roboto', sans-serif;
+}
+
+section.Main .limite .ImgC{
+    width: 50%;
+    height: 50%;
+    margin-left: 3em;
+}
+
+section.Main .limite{
+    display: flex;
+    position: fixed;
+    bottom: 4em;
+}
+
+section.Main footer button{
+    width: 200px;
+    height: 100px;
+    cursor: pointer;
+    border: 0;
+    background-color: #12c4ce;
+    border-radius: 0.8rem;
+    box-shadow: -2px 2px 5px rgb(126, 126, 126);
+    transition: all .5s;
+    font-size: clamp(1em, 3em, 5vw);
+}
+section.Main footer{
+    flex: 1;
+}
+section.Main footer button:hover{
+    background-color: #03b7c0;
+}

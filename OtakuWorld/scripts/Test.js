@@ -27,8 +27,8 @@ function Tema(){
     header.style.backgroundColor= "rgb(85, 85, 85)";
     Lamp.style.backgroundColor= "rgb(105, 110, 115)";
     IconLamp.src = "./images/Sol.svg"
-    bar.style.backgroundColor= "rgb(85, 85, 85)";
     Aside.style.filter = "grayscale(55%)";
+    bar.style.backgroundColor= "rgb(85, 85, 85)";
     Hs.style.backgroundColor = "rgb(105, 110, 115)";
     }
 }

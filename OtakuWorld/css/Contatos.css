@@ -24,6 +24,12 @@ header.second p{
    font-weight: bolder;
 }
 
+/*Aside*/
+#AsideImg{
+background: url("../images/Bakuman2.png") no-repeat;
+background-size: cover;
+}
+
 /*Redes para contato*/
 
 article.redes{
@@ -53,12 +59,16 @@ article .Redes img{
     transition: all .3s;
 }
 article .Redes img.Dis{
-    width: 9vw;
-    height: 9vw;
+    width: 11vw;
+    height: 11vw;
     transition: all .3s;
 }
 article .Redes img:hover{
     filter: opacity(70%);
+}
+
+article .Redes .Discord p{
+    margin-top: -10px;
 }
 
 article.redes p{

@@ -47,6 +47,17 @@
             display: none;
         }
 
+        .container{
+            height: calc(100vh - 35vh - 8.5em);
+            width: 100vw;
+            flex-direction: column;
+        }
+
+        .card img, .card, .Back{ 
+            width: 35vw;
+            height: 38vw;
+        }
+
         header.principal, .containerLamp, .containerBack{
             height: 7.5em;
         }
@@ -104,6 +115,14 @@
             width: 40vw;
             height: 20vw;
         }
+
+        .FundoText{
+            display: none;
+        }
+
+        section.Main footer{
+            width: 100%;
+        }
     }
     
     @media(max-width: 745px){
@@ -113,3 +132,42 @@
     }
 
    
+    @media(max-width: 700px){
+        .cards{
+            display: grid;
+            grid-template-columns: 150%;
+            gap: 0px;
+        }
+        .container{
+            margin-top: 10vh;
+        }
+        .card{
+            margin-bottom: 5vh;
+        }
+      }
+
+      @media(min-width: 1300px){
+        .card img{ 
+            border: .2vw black solid;
+            box-shadow: .2vw .2vw .3vw .1vw black;
+        }
+
+        .card, .card img, .Back{
+            width: 20vw;
+            height: 25vw;
+        }
+        }
+
+    @media(min-height: 800px){
+            .card img{ 
+                border: .2vw black solid;
+                box-shadow: .2vw .2vw .3vw .1vw black;
+            }
+    
+            .card, .card img, .Back{
+                width: 20vw;
+                height: 25vw;
+            }
+    }
+    
+    

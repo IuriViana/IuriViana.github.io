@@ -3,3 +3,54 @@
     background-position: right;
     background-size: cover;
 }
+
+.card{
+    position: relative;
+    cursor: pointer;
+}
+.card img, .card, .Back{ 
+    width: 18vw;
+    height: 25vw;
+}
+
+.card img{ 
+    border: 2px solid black;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: calc(100vh - 35vh - 8.5em);
+    width: 80vw;
+}
+
+.cards{
+    margin: auto;
+    display: grid;
+    gap: 5vh;
+    grid-template-columns: 1fr 1fr;
+}
+
+.card .Flip{
+    transition: transform .5s;
+    transition-delay: .1s;
+    transform-style: preserve-3d; 
+}
+
+.Back{
+    background-color: rgb(112, 112, 112);
+}
+
+.Back,.Front{
+    position: absolute;
+    backface-visibility: hidden; 
+}
+
+.Back{ 
+    transform: rotateY(180deg);
+}
+
+.card:hover .Flip{ 
+transform: perspective(1000px) rotateY(180deg);
+}

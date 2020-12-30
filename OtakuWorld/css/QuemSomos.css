@@ -1,35 +1,40 @@
+/*Aside*/
+
 #AsideImg{
     background: url("../images/Bakuman2.png") no-repeat;
     background-position: right;
     background-size: cover;
 }
 
-.card{
-    position: relative;
-    cursor: pointer;
-}
-.card img, .card, .Back{ 
-    width: 18vw;
-    height: 25vw;
-}
+/*Cartões informativos*/
 
-.card img{ 
-    border: 2px solid black;
+header.second{
+    height: 30vh;
 }
 
 .container{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: calc(100vh - 35vh - 8.5em);
+    height: calc(100vh - 30vh - 8.7em);
     width: 80vw;
 }
 
 .cards{
-    margin: auto;
     display: grid;
     gap: 5vh;
     grid-template-columns: 1fr 1fr;
+    margin: auto;
+}
+
+.card{
+    position: relative;
+    cursor: pointer; 
+}
+
+.card img, .card, .Back{ 
+    width: 18vw;
+    height: 25vw;
+}
+.card img{ 
+    border: 2px solid black;
 }
 
 .card .Flip{
@@ -38,11 +43,7 @@
     transform-style: preserve-3d; 
 }
 
-.Back{
-    background-color: rgb(112, 112, 112);
-}
-
-.Back,.Front{
+.Back, .Front{
     position: absolute;
     backface-visibility: hidden; 
 }
@@ -50,7 +51,6 @@
 .Back{ 
     transform: rotateY(180deg);
 }
-
 .card:hover .Flip{ 
 transform: perspective(1000px) rotateY(180deg);
 }

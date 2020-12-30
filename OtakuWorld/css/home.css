@@ -1,67 +1,67 @@
+/*Imagem de fundo*/
+
 .Img{
-    position: fixed;
-    z-index: 0;
     width: 100%;
     height: 100vh;
+    position: fixed;
+    z-index: 0;
+    
     background: url("../images/Fundo.jpg") no-repeat;
     background-size: cover;
-    background-attachment: fixed;
     background-position: top;
-}
-
-section.Main .limite .ImgC{
-    width: 50%;
-    height: 50%;
-    margin-left: 3em;
-    display: none;
+    background-attachment: fixed;
 }
 
 header.principal{
     position: fixed;
 }
 
-.FundoText{
-    position: fixed;
-    top: 8vw;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+/*Texto principal da Home*/
 
+.FundoText{
     width: 80%;
     height: 13vw;
+    position: relative;
+    top: 8vw;
 
     background-color: rgb(192, 192, 192);
     border-bottom: 2px solid black;
 }
 
 .Text{
-    margin: auto;
-    text-align: center;
-    color: rgb(17, 17, 17);
-    font-size: clamp(1em, 1em + 2vw, 5vw);
     font-family: 'Oswald', sans-serif;
     font-weight: bolder;
+    font-size: clamp(1em, 1em + 2vw, 5vw);
+    color: rgb(17, 17, 17);
+    text-align: center;
 }
+
+/*Rodapé*/
 
 section.Main footer{
     width: 80%;
     height: 30vh;
     position: fixed;
     bottom: 0;
-    border-top: 2px solid black;
+
     background-color: rgba(0, 0, 0, 0.6);
+    border-top: 2px solid black;
 }
+
+/*Botão para acesso à página de produtos*/
 
 section.Main footer button{
     width: 20vw;
     height: 10vw;
-    cursor: pointer;
     border: 0;
-    background-color: #07cfda;
     border-radius: 0.8rem;
+
+    background-color: #07cfda;
     box-shadow: -2px 2px 5px rgb(116, 115, 115);
-    transition: all .5s;
+
     font-size: clamp(1em, 1em + 1.5vw, 5vw);
+    transition: all .5s;
+    cursor: pointer;
 }
 
 section.Main footer button:hover{

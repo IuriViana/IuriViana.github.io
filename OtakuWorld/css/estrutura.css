@@ -1,4 +1,4 @@
-.containerLamp, .Logo, footer{
+.containerLamp, .Logo, section.Main footer, .FundoText, .container{
     display: flex;
     justify-content:center;
     align-items: center;
@@ -11,8 +11,8 @@ header.principal, section.Ative{
 
 header.principal{
     width: 80%;
-    position: relative;
     height: 8vw;
+    position: relative;
     z-index: 5;
 
     justify-content: space-between;
@@ -33,12 +33,12 @@ header.principal{
     height: 5vw;
 }
 
-.containerLamp, .containerBack{
+.containerLamp, a.containerBack{
     width: 8vw;
     border-left: 2px solid black;
     cursor: pointer;
 }
-.containerLamp:hover, .containerBack:hover{
+.containerLamp:hover, a.containerBack:hover{
     border-left: 4px solid black;
     border-bottom: 0.5px solid black;
 }
@@ -47,7 +47,7 @@ header .containerLamp img{
     width: 5vw;
     height: 5vw;
 }
-header .containerBack img{
+header a.containerBack img{
     width: 4.5vw;
     height: 4.5vw;
 }

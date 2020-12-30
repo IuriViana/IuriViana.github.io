@@ -28,14 +28,6 @@ header.principal{
     border-bottom: 2px solid black;
 }
 
-.Text{
-    font-family: 'Oswald', sans-serif;
-    font-weight: bolder;
-    font-size: clamp(1em, 1em + 2vw, 5vw);
-    color: rgb(17, 17, 17);
-    text-align: center;
-}
-
 /*Rodapé*/
 
 section.Main footer{

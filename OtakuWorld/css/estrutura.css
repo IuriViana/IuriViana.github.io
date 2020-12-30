@@ -1,9 +1,9 @@
-.containerLamp, .Logo, section.Main footer, .FundoText, .container{
+.containerMenu, .containerLamp, .Logo, section.Main footer, .FundoText, .container, .Ative{
     display: flex;
     justify-content:center;
     align-items: center;
 }
-header.principal, section.Ative{
+header.principal, section.Ative, section.MenuIcon{
     display: flex;
 }
 
@@ -28,26 +28,27 @@ header.principal{
     width: 6.5vw;
     height: 6.5vw;
 }
-.Logo .text{
+.Logo .text, .Logo .text2{
     width: 30vw;
     height: 5vw;
 }
 
-.containerLamp, a.containerBack{
+.containerLamp, a.containerBack, .containerMenu, .containerLamp2{
     width: 8vw;
+    height: 8vw;
     border-left: 2px solid black;
     cursor: pointer;
 }
-.containerLamp:hover, a.containerBack:hover{
+.containerLamp:hover, a.containerBack:hover, .containerMenu:hover, .containerLamp2:hover{
     border-left: 4px solid black;
     border-bottom: 0.5px solid black;
 }
 
-header .containerLamp img{
+.containerLamp img, .containerLamp2 img{
     width: 5vw;
     height: 5vw;
 }
-header a.containerBack img{
+a.containerBack img, .containerMenu img{
     width: 4.5vw;
     height: 4.5vw;
 }
@@ -85,4 +86,12 @@ header a.containerBack img{
 
 .limite, section.Main{
     width: 80%;
+}
+
+.Text{
+    font-family: 'Oswald', sans-serif;
+    font-weight: bolder;
+    font-size: clamp(1em, 1em + 2vw, 5vw);
+    color: rgb(17, 17, 17);
+    text-align: center;
 }

@@ -7,6 +7,12 @@
     }
     }
 
+    @media(min-width: 1280px){
+    nav.menu ul a{
+        font-size: clamp(1vw, 1em + 1.5vw, 2.5vw);
+    }
+    }
+
 /*Maioria Contatos*/
 
     @media(max-width: 750px){
@@ -16,7 +22,7 @@
 
         /*Header principal*/
 
-        header.principal, .containerLamp, a.containerBack{
+        header.principal, .containerLamp, a.containerBack, .containerMenu{
             height: 7.5em;
         } 
 
@@ -26,15 +32,15 @@
             height: 10vw;
         }
 
-        .containerLamp, a.containerBack{
+        .containerLamp, a.containerBack, .containerMenu{
             width: 7.5em;
         }
 
-        header .containerLamp img{
+        .containerLamp img{
             width: 10vw;
             height: 10vw;
         }
-        header a.containerBack img{
+        a.containerBack img, .containerMenu img{
             width: 9vw;
             height: 9vw;
         }
@@ -111,6 +117,10 @@
         .Logo .text{
             display: none;
         }
+        .Logo .text2{
+            width: 40vw;
+            height: 10vw;
+        }
     }
 
    
@@ -137,6 +147,55 @@
                 width: 25vw;
                 height: 30vw;
             }
+    }
+
+    @media(max-width: 900px){
+        header.principal, .containerLamp, a.containerBack, .containerMenu{
+            height: 7.5em;
+        } 
+
+        nav.MenuLateral{
+            top: 7.5em;
+        }
+
+        section.MenuIcon{
+            display: flex;
+        }
+        nav.menu{
+            display: none;
+        }
+        .obras{
+            margin: 5vh 0 5vh 0;
+            display: grid;
+            grid-template-columns: 1FR 1FR;
+            gap: 6vw;
+        }
+
+        #produtos article img{
+            width: 25vw;
+            height: 33vw;
+        }
+    }
+
+    @media(max-width:640px){
+        #produtos article img{
+            width: 30vw;
+            height: 38vw;
+        }
+        #produtos article p{
+            display: none;
+        }
+    }
+
+    @media(max-width: 400px){
+        header .containerLamp img{
+            width: 18vw;
+            height: 18vw;
+        }
+        header a.containerBack img, .containerMenu img{
+            width: 17vw;
+            height: 17vw;
+        }
     }
     
     

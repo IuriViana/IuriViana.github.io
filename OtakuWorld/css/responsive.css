@@ -175,6 +175,10 @@
             width: 25vw;
             height: 33vw;
         }
+
+        .parralax{
+            background-attachment: scroll;
+        }
     }
 
     @media(max-width:640px){

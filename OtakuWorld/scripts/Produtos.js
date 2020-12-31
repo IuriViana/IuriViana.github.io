@@ -33,14 +33,8 @@ function slide3(){
 
 function slide4(){
     banner.src = "./images/Slides/Slide4.jpg"
-    setTimeout("slide5()", intervalo);
-    banner.style.opacity = "0.9"
-}
-
-function slide5(){
-    banner.src = "./images/Slides/Slide5.jpg"
     setTimeout("slide1()", intervalo);
-    banner.style.opacity = "1"
+    banner.style.opacity = "0.9"
 }
 
 

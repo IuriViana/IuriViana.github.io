@@ -1,4 +1,5 @@
-/*Tema, mas sem localStorage*/
+/*Tema sem localStorage*/
+
 var back = document.body
 var header = document.querySelector('header.principal')
 var Hs = document.querySelector('header.second')

@@ -24,8 +24,6 @@ header.second{
 
 header.second p{
    font-size: clamp(3vw, 1em + 4vw, 6vw);
-   font-family: 'Oswald', sans-serif;
-   font-weight: bolder;
 }
 
 /*Aside*/
@@ -49,7 +47,7 @@ article .Redes{
     justify-content: space-between;
 }
 
-.AllIcons, .Discord{
+.AllIcons, .Discord, form{
     flex-direction: column;
 }
 
@@ -129,13 +127,12 @@ form{
 
     background-color: rgb(150, 150, 150);
     margin: 0 auto;
-    flex-direction: column;
 
     border-left: 1px solid black;
     border-right: 1px solid black;
 }
 
-.Confirm{
+.Confirm, hr, input, textarea{
     width: 90%;
 }
 .Confirm input + input{
@@ -148,14 +145,11 @@ form{
 hr{
     color: black;
     margin: 5vh 0 5vh 0;
-    width: 90%;
 }
 
 label{
     font-size: clamp(1.6em, 2em, 3em);
-    font-family: 'Roboto';
     font-weight: bolder;
-    color: rgb(46, 46, 46);
 }
 
 input{
@@ -167,15 +161,15 @@ textarea{
 }
 
 input, textarea{
-    width: 90%;
     border: 1px solid black;
     border-radius: 0.8rem;
     
     font-size: clamp(1.6em, 2em, 3em);
-    font-family: 'Roboto';
-    color: rgb(46, 46, 46);
 
     background-color: rgb(190, 190, 190);
 }
 
-
+label, input, textarea{
+    font-family: 'Roboto';
+    color: rgb(46, 46, 46);
+}

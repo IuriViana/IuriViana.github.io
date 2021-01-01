@@ -30,8 +30,8 @@ header.second{
 }
 
 .card img, .card, .Back{ 
-    width: 18vw;
-    height: 25vw;
+    width: 16vw;
+    height: 23vw;
 }
 .card img{ 
     border: 2px solid black;
@@ -52,5 +52,12 @@ header.second{
     transform: rotateY(180deg);
 }
 .card:hover .Flip{ 
-transform: perspective(1000px) rotateY(180deg);
+    transform: perspective(1000px) rotateY(180deg);
+}
+
+@media(max-width: 750px){
+header.second{
+    height: 25vh;
+    margin-bottom: 50%;
+}
 }

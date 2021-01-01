@@ -1,4 +1,4 @@
-.containerMenu, .containerLamp, .Logo, section.Main footer, .FundoText, .container, .Ative{
+.containerMenu, .containerLamp, .Logo, .container, .Ative{
     display: flex;
     justify-content:center;
     align-items: center;
@@ -8,7 +8,7 @@ header.principal, section.Ative, section.MenuIcon{
 }
 
 /*Header principal*/
-
+ 
 header.principal{
     width: 80%;
     height: 8vw;
@@ -24,9 +24,9 @@ header.principal{
 }
 
 .logo{
-    margin: 0 0.5em 0 0.5em;
     width: 6.5vw;
     height: 6.5vw;
+    margin: 0 0.5em 0 0.5em;
 }
 .Logo .text, .Logo .text2{
     width: 30vw;
@@ -58,7 +58,6 @@ a.containerBack img, .containerMenu img{
 #AsideImg{
     width: 20%;
     height: 100vh;
-    position: fixed;
     top: 0;
     z-index: 5;
 
@@ -71,12 +70,15 @@ a.containerBack img, .containerMenu img{
     box-shadow: -0.5px 0px 3px rgb(58, 58, 58);
 }
 
+.barrinha, #AsideImg{
+    position: fixed;
+}
+
 /*Outros componentes*/
 
 .barrinha{
     width: 100%;
     height: 2rem;
-    position: fixed;
     bottom: 0;
     z-index: 6;
     
@@ -89,9 +91,12 @@ a.containerBack img, .containerMenu img{
 }
 
 .Text{
-    font-family: 'Oswald', sans-serif;
-    font-weight: bolder;
     font-size: clamp(1em, 1em + 2vw, 5vw);
     color: rgb(17, 17, 17);
     text-align: center;
+}
+
+.Text, header.second p, nav.MenuLateral ul a, #produtos article p, #End .carregar button, .FooterSecond h1{
+    font-family: 'Oswald', sans-serif;
+    font-weight: bolder;
 }

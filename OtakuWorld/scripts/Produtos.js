@@ -1,5 +1,4 @@
-//Somente alguns testes - Nada muito funcional ou compacto
-
+//Somente alguns testes - Nada muito funcional
 
 /*Ativar menu lateral*/
 var MenuLateral = document.querySelector(".MenuLateral");
@@ -16,11 +15,11 @@ function Ativar(){
 
 var intervalo = 3000;
 var banner = document.querySelector("#banner")
-var keyframe = [{opacity:'0.4'},{opacity:'1'}]
+var keyframe = [{opacity:'0.5'},{opacity:'1'}]
 
 function slide1(){
-    banner.src = "./images/Slides/Slide1.jpg"
     banner.animate(keyframe, {duration: 3000, iterations: 1});
+    banner.src = "./images/Slides/Slide1.jpg"
     setTimeout("slide2()", intervalo);
 }
 
@@ -42,13 +41,15 @@ function slide4(){
     setTimeout("slide1()", intervalo);
 }
 
-/**Tema com localStorage*/
+/**Tema e localStorage*/
 
+var IconLamp2 = document.querySelector('img.IconLamp')
 var header2 = document.querySelector('header.principal');
 var SlideAndTitle = document.querySelector('.SlideAndTitle');
 var title = document.querySelector('.title');
 var produtos = document.querySelector('#produtos');
 var End = document.querySelector('#End');
+
 
 header2.style.backgroundColor = localStorage.header2
 SlideAndTitle.style.backgroundColor = localStorage.SlideAndTitle
@@ -66,8 +67,11 @@ var SalvarDados = function() {
 }
 document.onclick = SalvarDados;
 
+
+   
     function Tema(){
         if(title.style.backgroundColor== "rgb(80, 80, 80)"){
+            IconLamp2.src = "./images/Svg/Lua.svg"
             header2.style.backgroundColor = "";
             title.style.backgroundColor= "";
             SlideAndTitle.style.backgroundColor= "";
@@ -76,6 +80,7 @@ document.onclick = SalvarDados;
             }
         
             else{
+            IconLamp2.src = "./images/Svg/Sol.svg"
             header2.style.backgroundColor= "rgb(100, 100, 100, 0.9)";
             title.style.backgroundColor= "rgb(80, 80, 80)";
             SlideAndTitle.style.backgroundColor= "rgb(130, 130, 130)";

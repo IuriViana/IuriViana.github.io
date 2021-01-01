@@ -63,7 +63,7 @@ IconLamp2.src = localStorage.IconLamp2;
         localStorage.setItem('End', End.style.backgroundColor);
         localStorage.setItem('IconLamp2', IconLamp2.src);
     }
-    document.onchange = SalvarDados;
+    document.onclick = SalvarDados;
 
     function Tema(){
         if(title.style.backgroundColor== "rgb(80, 80, 80)"){

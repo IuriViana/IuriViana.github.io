@@ -15,27 +15,31 @@ function Ativar(){
 
 var intervalo = 3000;
 var banner = document.querySelector("#banner")
-var keyframe = [{opacity:'0.2'},{opacity:'1'}]
+var keyframe = [{opacity:'0.5'},{opacity:'1'}]
 
 function slide1(){
+    banner.animate(keyframe, {duration: 3000, iterations: 1});
     banner.src = "./images/Slides/Slide1.jpg"
     banner.animate(keyframe, {duration: 3000, iterations: 1});
     setTimeout("slide2()", intervalo);
 }
 
 function slide2(){
+    banner.animate(keyframe, {duration: 3000, iterations: 1});
     banner.src = "./images/Slides/Slide2.jpg"
     banner.animate(keyframe, {duration: 3000, iterations: 1});
     setTimeout("slide3()", intervalo);
 }
 
 function slide3(){
+    banner.animate(keyframe, {duration: 3000, iterations: 1});
     banner.src = "./images/Slides/Slide3.jpg"
     banner.animate(keyframe, {duration: 3000, iterations: 1});
     setTimeout("slide4()", intervalo);
 }
 
 function slide4(){
+    banner.animate(keyframe, {duration: 3000, iterations: 1});
     banner.src = "./images/Slides/Slide4.jpg"
     banner.animate(keyframe, {duration: 3000, iterations: 1});
     setTimeout("slide1()", intervalo);

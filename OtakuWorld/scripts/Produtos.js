@@ -15,11 +15,11 @@ function Ativar(){
 
 var intervalo = 3000;
 var banner = document.querySelector("#banner")
-var keyframe = [{opacity:'0.5'},{opacity:'1'}]
+var keyframe = [{opacity:'0.2'},{opacity:'1'}]
 
 function slide1(){
-    banner.animate(keyframe, {duration: 3000, iterations: 1});
     banner.src = "./images/Slides/Slide1.jpg"
+    banner.animate(keyframe, {duration: 3000, iterations: 1});
     setTimeout("slide2()", intervalo);
 }
 

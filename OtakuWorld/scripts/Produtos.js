@@ -17,7 +17,7 @@ var banner = document.querySelector("#banner")
 var Slide = 1;
 
 function mudarImagem() {
-    setTimeout(opacidade, 2600);
+    setTimeout(opacidade, 2200);
     if(Slide == 4) {
         banner.src = `./images/Slides/Slide${Slide}.jpg`
         banner.style.opacity = "1"

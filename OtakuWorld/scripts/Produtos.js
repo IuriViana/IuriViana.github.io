@@ -13,35 +13,28 @@ function Ativar(){
 
 /*Slide*/ 
 
-var intervalo = 3000;
 var banner = document.querySelector("#banner")
-var keyframe = [{opacity:'0.4'},{opacity:'1'}]
+var Slide = 1;
 
-function slide1(){
-    banner.animate(keyframe, {duration: 3000, iterations: 1});
-    banner.src = "./images/Slides/Slide1.jpg"
-    setTimeout("slide2()", intervalo);
+function mudarImagem() {
+    setTimeout(opacidade, 2600);
+    if(Slide == 4) {
+        banner.src = `./images/Slides/Slide${Slide}.jpg`
+        banner.style.opacity = "1"
+        Slide = 1
+
+    } else {
+        banner.src = `./images/Slides/Slide${Slide}.jpg`
+        banner.style.opacity = "1"
+        Slide += 1
+    }
 }
-
-function slide2(){
-    banner.animate(keyframe, {duration: 3000, iterations: 1});
-    banner.src = "./images/Slides/Slide2.jpg"
-    setTimeout("slide3()", intervalo);
+function opacidade() {
+    banner.style.opacity = "0.5"
 }
+setInterval(mudarImagem, 3000)
 
-function slide3(){
-    banner.animate(keyframe, {duration: 3000, iterations: 1});
-    banner.src = "./images/Slides/Slide3.jpg"
-    setTimeout("slide4()", intervalo);
-}
-
-function slide4(){
-    banner.animate(keyframe, {duration: 3000, iterations: 1});
-    banner.src = "./images/Slides/Slide4.jpg"
-    setTimeout("slide1()", intervalo);
-}
-
-/**Tema e localStorage*/
+/**Tema e Teste de localStorage*/
 
 var IconLamp2 = document.querySelector('img.IconLamp')
 var header2 = document.querySelector('header.principal');
@@ -67,8 +60,6 @@ var SalvarDados = function() {
 }
 document.onclick = SalvarDados;
 
-
-   
     function Tema(){
         if(title.style.backgroundColor== "rgb(80, 80, 80)"){
             IconLamp2.src = "./images/Svg/Lua.svg"

@@ -1,16 +1,5 @@
 //Somente alguns testes - Nada muito funcional
 
-/*Ativar menu lateral*/
-var MenuLateral = document.querySelector(".MenuLateral");
-function Ativar(){
-    if(MenuLateral.style.left === ""){
-        MenuLateral.style.left = "0vw";
-    }
-    else{
-        MenuLateral.style.left = ""
-    }
-}
-
 /*Slide*/ 
 
 var banner = document.querySelector("#banner")
@@ -33,6 +22,17 @@ function opacidade() {
     banner.style.opacity = "0.5"
 }
 setInterval(mudarImagem, 3000)
+
+/*Ativar menu lateral*/
+var MenuLateral = document.querySelector(".MenuLateral");
+function Ativar(){
+    if(MenuLateral.style.left === ""){
+        MenuLateral.style.left = "0vw";
+    }
+    else{
+        MenuLateral.style.left = ""
+    }
+}
 
 /**Tema e Teste de localStorage*/
 

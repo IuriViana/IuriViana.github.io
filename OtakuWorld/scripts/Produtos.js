@@ -5,21 +5,16 @@
 var banner = document.querySelector("#banner")
 var Slide = 1;
 
-function mudarImagem() {
-    setTimeout(opacidade, 2200);
+function mudarImagem(){
+    banner.animate([{opacity: 1}, {opacity: 0.3}], {duration: 4000, iterations: 1})
     if(Slide == 4) {
         banner.src = `./images/Slides/Slide${Slide}.jpg`
-        banner.style.opacity = "1"
         Slide = 1
 
     } else {
         banner.src = `./images/Slides/Slide${Slide}.jpg`
-        banner.style.opacity = "1"
         Slide += 1
     }
-}
-function opacidade() {
-    banner.style.opacity = "0.5"
 }
 setInterval(mudarImagem, 3000)
 

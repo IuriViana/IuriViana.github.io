@@ -150,11 +150,9 @@ nav.MenuLateral ul a{
     width: 90vw;
     height: 50vh;
     border: 1px solid black;
-    object-fit: cover;
-    transition: all .3s;
 }
 
-.Slide img, #produtos article img{
+#produtos article img{
     object-fit: cover;
 }
 

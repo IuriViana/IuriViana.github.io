@@ -1,17 +1,17 @@
 //Somente alguns testes - Nada muito funcional
 
-/*LazyLoader*/
-const Slide2 = document.querySelector(".Slide")
+/*LazyLoad - Não deu muito certo*/
+const Imgs = document.querySelectorAll(".allImgs img");
 
 function AtivaNoScroll(){
-    document.querySelectorAll(".allImgs img").forEach((img, index) => {
-        if(img.getBoundingClientRect().top < window.innerHeight){
+    Imgs.forEach((img, index) => {
+        if(img.getBoundingClientRect().top < window.innerHeight/0.62){
             console.log("Imagem apareceu", index);
             img.src = img.getAttribute('data-src');
         }
+        return false;
     });
 }
-
 window.addEventListener('scroll', AtivaNoScroll)
 /*Slide*/ 
 

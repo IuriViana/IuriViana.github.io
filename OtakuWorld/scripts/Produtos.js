@@ -1,5 +1,18 @@
 //Somente alguns testes - Nada muito funcional
 
+/*LazyLoader*/
+const Slide2 = document.querySelector(".Slide")
+
+function AtivaNoScroll(){
+    document.querySelectorAll(".allImgs img").forEach((img, index) => {
+        if(img.getBoundingClientRect().top < window.innerHeight){
+            console.log("Imagem apareceu", index);
+            img.src = img.getAttribute('data-src');
+        }
+    });
+}
+
+window.addEventListener('scroll', AtivaNoScroll)
 /*Slide*/ 
 
 var banner = document.querySelector("#banner")
